@@ -11,8 +11,8 @@
   DTS:LocaleID="2058"
   DTS:ObjectName="XMLToFTP"
   DTS:PackageType="5"
-  DTS:VersionBuild="52"
-  DTS:VersionGUID="{7FC6541E-18C6-43C9-BA99-E1DB5468B149}">
+  DTS:VersionBuild="53"
+  DTS:VersionGUID="{E6DAF3E5-1CDE-4CC9-B701-7CD842435547}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -31,7 +31,7 @@
             <DTS:Property
               DTS:Name="ServerPassword"
               Sensitive="1"
-              Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAjj3SHzngfU+fxdQdKlcAagAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACf3GU/4Tf/H4ZmkbGLEMmiFN5iHh+LNmf411xM2SVbUAAAAAAOgAAAAAIAACAAAAB58DfOe3XGwvIulJ07eoZ0sBpKmfx4fgyh/EI9Aj+BcSAAAAAl6Ecq2rcRcBVRxzT+Ibrwae5HR1XoEZlJLZKrz3Lpt0AAAAAwuYKT8hD1cwRFIe1zE0ar3F7bBWkO4wa8AIBTyz2HmLaYEnIg2Hyc/bFWLtj5lQCiHp4ecmwfACGgjvV3caC/</DTS:Property>
+              Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAjj3SHzngfU+fxdQdKlcAagAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAic8LF12veLXouKa1eBjREbAEDjEfaz/e0equbyb7jqwAAAAAOgAAAAAIAACAAAACP4IvHfzQtY7VIHJnsVpW50d1yH6SmqchTjXJOWsjfoyAAAABujtEKBDR2zO42IVPlDzprkwPF/mkEZu/0RohUw2/wjEAAAACUWNUSSHnn+OovsArBur1se2DFEUqTXcaUZqyDyY+T4I9Nl4Mzq34yQihge2YSP5QEb8U9CXpmT/w9WqnpTimC</DTS:Property>
           </DTS:FtpConnection>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
@@ -101,25 +101,6 @@
   </DTS:Variables>
   <DTS:Executables>
     <DTS:Executable
-      DTS:refId="Package\Elimina Archivos Generados"
-      DTS:CreationName="Microsoft.FtpTask"
-      DTS:Description="Tarea FTP"
-      DTS:Disabled="True"
-      DTS:DTSID="{6810AF8D-5C8E-4CD6-9C72-245D11AA8297}"
-      DTS:ExecutableType="Microsoft.FtpTask"
-      DTS:LocaleID="-1"
-      DTS:ObjectName="Elimina Archivos Generados"
-      DTS:ThreadHint="0">
-      <DTS:Variables />
-      <DTS:ObjectData>
-        <FtpData
-          ConnectionName="{E447272D-A3E8-4585-8316-DACC1AC3D06B}"
-          TaskOperationType="DeleteLocal"
-          TaskIsLocalPathVar="True"
-          TaskLocalPath="User::PathLocal" />
-      </DTS:ObjectData>
-    </DTS:Executable>
-    <DTS:Executable
       DTS:refId="Package\Envia Archivos"
       DTS:CreationName="Microsoft.FtpTask"
       DTS:Description="Tarea FTP"
@@ -128,7 +109,7 @@
       DTS:ExecutableType="Microsoft.FtpTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Envia Archivos"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:ObjectData>
         <FtpData
@@ -148,7 +129,7 @@
       DTS:ExecutableType="Microsoft.ScriptTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Enviar Mail"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:ObjectData>
         <ScriptProject
@@ -1574,27 +1555,11 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Restricción 1]"
       DTS:CreationName=""
-      DTS:DTSID="{627D4E71-B4A0-490E-98CB-2A49021085CD}"
+      DTS:DTSID="{9AB074F8-6DD9-4B82-A78C-D2E9E672D71C}"
       DTS:From="Package\Envia Archivos"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Restricción 1"
-      DTS:To="Package\Elimina Archivos Generados" />
-    <DTS:PrecedenceConstraint
-      DTS:refId="Package.PrecedenceConstraints[Restricción 2]"
-      DTS:CreationName=""
-      DTS:DTSID="{A5383062-86AB-4C84-B071-B878C3F4763F}"
-      DTS:From="Package\Elimina Archivos Generados"
-      DTS:LogicalAnd="True"
-      DTS:ObjectName="Restricción 2"
       DTS:To="Package\Enviar Mail" />
-    <DTS:PrecedenceConstraint
-      DTS:refId="Package.PrecedenceConstraints[Restricción 3]"
-      DTS:CreationName=""
-      DTS:DTSID="{D7C7D205-F026-46FB-B1A2-3894FBB2B9DF}"
-      DTS:From="Package\Operation FTP_Mail"
-      DTS:LogicalAnd="True"
-      DTS:ObjectName="Restricción 3"
-      DTS:To="Package\Envia Archivos" />
   </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--Esta sección CDATA contiene la información de diseño del paquete. Esta sección incluye información como, por ejemplo, las coordenadas (x,y), el ancho y el alto.-->
@@ -1607,19 +1572,15 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="209,42"
-          Id="Package\Elimina Archivos Generados"
-          TopLeft="301,183" />
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="147,42"
           Id="Package\Envia Archivos"
-          TopLeft="338,105" />
+          TopLeft="90,85" />
         <NodeLayout
           Size="130,42"
           Id="Package\Enviar Mail"
-          TopLeft="345,259" />
+          TopLeft="98,173" />
         <NodeLayout
           Size="131,42"
           Id="Package\Execute SP"
@@ -1627,33 +1588,21 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         <NodeLayout
           Size="171,42"
           Id="Package\Operation FTP_Mail"
-          TopLeft="609,105" />
+          TopLeft="288,116" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción]"
-          TopLeft="373,74.5">
+          TopLeft="373.25,74.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="321.5,30.5"
+              EndConnector="0,41.5"
               Start="0,0"
-              End="321.5,23">
+              End="0,34">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,11.25" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,11.25"
-                    Point2="0,15.25"
-                    Point3="4,15.25" />
-                  <mssgle:LineSegment
-                    End="317.5,15.25" />
-                  <mssgle:CubicBezierSegment
-                    Point1="317.5,15.25"
-                    Point2="321.5,15.25"
-                    Point3="321.5,19.25" />
-                  <mssgle:LineSegment
-                    End="321.5,23" />
+                    End="0,34" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1664,62 +1613,18 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 1]"
-          TopLeft="408.5,147">
+          TopLeft="163.25,127">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,36"
+              EndConnector="0,46"
               Start="0,0"
-              End="0,28.5">
+              End="0,38.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,28.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Restricción 2]"
-          TopLeft="407.75,225">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,34"
-              Start="0,0"
-              End="0,26.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,26.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Restricción 3]"
-          TopLeft="609,126">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-124,0"
-              Start="0,0"
-              End="-116.5,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="-116.5,0" />
+                    End="0,38.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
