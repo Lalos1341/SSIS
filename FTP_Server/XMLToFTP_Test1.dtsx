@@ -1,0 +1,261 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="10/31/2019 10:30:49 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="MEXSIST006"
+  DTS:CreatorName="MEXSIST006\emiranda"
+  DTS:DTSID="{B820A915-0585-4120-8198-04D59C1F0B75}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.1301.433"
+  DTS:LocaleID="2058"
+  DTS:ObjectName="XMLToFTP_Test1"
+  DTS:PackageType="5"
+  DTS:VersionBuild="45"
+  DTS:VersionGUID="{907FCE8A-0E6D-4BA9-8D1E-1E792234AB72}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Administrador de conexiones FTP]"
+      DTS:CreationName="FTP"
+      DTS:DTSID="{FB60C5CA-CAFA-453C-84D2-91692F020FC0}"
+      DTS:ObjectName="Administrador de conexiones FTP">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="207.198.106.56:21">
+          <DTS:FtpConnection
+            DTS:ServerName="207.198.106.56"
+            DTS:ServerUserName="Development">
+            <DTS:Property
+              DTS:Name="ServerPassword"
+              Sensitive="1"
+              Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA8ASKCQ5J3EaOsVYo6pThdgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADVawKkfg7jsnqRF9RXvAKsKJpRsdXhyoou/b3u7esePAAAAAAOgAAAAAIAACAAAADVroozum6SDGvDNFyzn2aWLZmZEOeemm8d2+pRKatoVSAAAADIMDCpyVZCJT935TYEsYIH4qJ0hoJ43LEFd/5EW78BekAAAACdfLnwvhPtyGhIQFiuJsK1plvbjVeI+R9Zw6Vbn/+m6FohZRkkwFwh+ay0DEVReHczFYPEiHZy7QY/UhuB2zeG</DTS:Property>
+          </DTS:FtpConnection>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Administrador de conexiones SMTP]"
+      DTS:CreationName="SMTP"
+      DTS:Description="Correo prueba"
+      DTS:DTSID="{F6A26C40-6379-4F7C-95AC-5AC3CF627944}"
+      DTS:ObjectName="Administrador de conexiones SMTP">
+      <DTS:ObjectData>
+        <SmtpConnectionManager
+          ConnectionString="SmtpServer=intertraffic.com.mx;UseWindowsAuthentication=False;EnableSsl=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[EnvioSSIS.xml]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{F708A466-3BF8-4712-8396-96058D229280}"
+      DTS:ObjectName="EnvioSSIS.xml">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="C:\PruebasXML_SQL\EnvioSSIS.xml" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[MEXSIST006\ESEACEK19.SacDB.sa]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{EF6BA985-21FD-4EF6-9171-A41DA06A9FD3}"
+      DTS:ObjectName="MEXSIST006\ESEACEK19.SacDB.sa">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=MEXSIST006\ESEACEK19;User ID=sa;Initial Catalog=SacDB;Provider=SQLNCLI11.1;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA8ASKCQ5J3EaOsVYo6pThdgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABhka4tN8h0HAnUZnJMVWvJ8RV6j4YCSelmlTWJ5+yqbAAAAAAOgAAAAAIAACAAAAABYM4wJd6IQv5GxlWcn4DbDhAOMwx37faBJnouRPoNWiAAAACqN+mnmFgpkUlV1x7ykRVjGzFOe8OXlL3x/Fnf5VlZGUAAAAD3O3hQgCA27Gj5ajBKrONtSRdJsL9XYUPJbi+R+stecdD8ov6eCZyaEIKcAzC3ewQW6vq+iQ6zv2V9XEYUFgvq</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{BC511A8F-567A-4C3A-9A54-989B00271469}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="NombreArchivo">
+      <DTS:VariableValue
+        DTS:DataType="8">ArchivoXML.xml</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{D7C7D8A6-E66D-48AD-BD72-2B6CA66766F8}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="PathLocal">
+      <DTS:VariableValue
+        DTS:DataType="8">C:\PruebasXML_SQL\*.xml</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{E98EECFD-D406-4927-BF30-6B69D19915DE}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="Where">
+      <DTS:VariableValue
+        DTS:DataType="8">WHERE Ref.IdReferencia = 120272</DTS:VariableValue>
+    </DTS:Variable>
+  </DTS:Variables>
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Borrar Archivo Local"
+      DTS:CreationName="Microsoft.FtpTask"
+      DTS:Description="Tarea FTP"
+      DTS:DTSID="{D9191EA6-E120-441D-87F0-F115F9FE3D27}"
+      DTS:ExecutableType="Microsoft.FtpTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Borrar Archivo Local"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <FtpData
+          ConnectionName="{FB60C5CA-CAFA-453C-84D2-91692F020FC0}"
+          TaskOperationType="DeleteLocal"
+          TaskIsLocalPathVar="True"
+          TaskLocalPath="User::PathLocal" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Enviar Archivo"
+      DTS:CreationName="Microsoft.FtpTask"
+      DTS:Description="Tarea FTP"
+      DTS:DTSID="{BFFDE4B3-727E-4F72-8B2E-D107C1745634}"
+      DTS:ExecutableType="Microsoft.FtpTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Enviar Archivo"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <FtpData
+          ConnectionName="{FB60C5CA-CAFA-453C-84D2-91692F020FC0}"
+          TaskIsLocalPathVar="True"
+          TaskLocalPath="User::PathLocal"
+          TaskRemotePath="/" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Tarea Crear Archivo"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Tarea Ejecutar SQL"
+      DTS:DTSID="{E8671A46-5B0B-4F9C-BB99-1B155E4BD490}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Tarea Crear Archivo"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{EF6BA985-21FD-4EF6-9171-A41DA06A9FD3}"
+          SQLTask:SqlStatementSource="EXECUTE SACsp_SacWeb_Reporteador_ControlGastoXFacturaXML2 ?,?" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="0"
+            SQLTask:DtsVariableName="User::Where"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="129"
+            SQLTask:ParameterSize="1000" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="1"
+            SQLTask:DtsVariableName="User::NombreArchivo"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="129"
+            SQLTask:ParameterSize="250" />
+        </SQLTask:SqlTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción]"
+      DTS:CreationName=""
+      DTS:DTSID="{C5BE5D22-7349-4173-92A8-3AA94BED62FD}"
+      DTS:From="Package\Tarea Crear Archivo"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción"
+      DTS:To="Package\Enviar Archivo" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{A474186C-496D-482B-8427-143E64B2050D}"
+      DTS:From="Package\Enviar Archivo"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción 1"
+      DTS:To="Package\Borrar Archivo Local" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--Esta sección CDATA contiene la información de diseño del paquete. Esta sección incluye información como, por ejemplo, las coordenadas (x,y), el ancho y el alto.-->
+<!--Si edita manualmente esta sección y comete un error, puede eliminarlo. -->
+<!--El paquete podrá cargarse normalmente, pero se perderá la información de diseño anterior y el diseñador reorganizará los elementos automáticamente en la superficie de diseño.-->
+<Objects
+  Version="8">
+  <!--Cada uno de los nodos siguientes contiene propiedades que no afectan al comportamiento en tiempo de ejecución.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="173,42"
+          Id="Package\Tarea Crear Archivo"
+          TopLeft="386,121" />
+        <NodeLayout
+          Size="146,42"
+          Id="Package\Enviar Archivo"
+          TopLeft="407,186" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción]"
+          TopLeft="476.25,163">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,23"
+              Start="0,0"
+              End="0,15.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,15.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="174,42"
+          Id="Package\Borrar Archivo Local"
+          TopLeft="390,253" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción 1]"
+          TopLeft="478.5,228">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,25"
+              Start="0,0"
+              End="0,17.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,17.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

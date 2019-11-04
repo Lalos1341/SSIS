@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.902
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "FTP_Server", "FTP_Server\FTP_Server.dtproj", "{9BE340F4-EB61-4EB7-AB0E-6427D1E4C2C8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9BE340F4-EB61-4EB7-AB0E-6427D1E4C2C8}.Development|Default.ActiveCfg = Development
+		{9BE340F4-EB61-4EB7-AB0E-6427D1E4C2C8}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {426B827A-E3E5-406F-868E-6546EDDCF16D}
+	EndGlobalSection
+EndGlobal
