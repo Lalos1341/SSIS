@@ -11,8 +11,8 @@
   DTS:LocaleID="2058"
   DTS:ObjectName="XMLToFTP"
   DTS:PackageType="5"
-  DTS:VersionBuild="108"
-  DTS:VersionGUID="{0B9C8BAE-BE38-4964-B137-012ADDE5A555}">
+  DTS:VersionBuild="109"
+  DTS:VersionGUID="{1BD90C82-7CDD-4118-92E2-C18C90C28F31}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -27,7 +27,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAjj3SHzngfU+fxdQdKlcAagAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABUz+oxOOVrS+GAeNVYTYRDmyDk8uWZx6ZMMJaz7bIGNAAAAAAOgAAAAAIAACAAAABEa7L1Z8BkdDg4E8P5uLiRPHduNLvMFgZCtUMUPMZufCAAAABTQeI4sVzC59AoQKszIBr70geIAmSXynHxyWB6O8Zb5EAAAAB1T52Ni/qzs04EXwY/ae3XoEkFzBrMjCJqp0FgFpoMVfpckwdPKP2umwq+Mlf35qnxXvAt6HySASPgLtkdU+mg</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAjj3SHzngfU+fxdQdKlcAagAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAnCxFQ45DAtqPrrdnNZtNzo9FQJteUyrDybBmjaGMOVAAAAAAOgAAAAAIAACAAAAAMxCtbaxJ8jVA0aGhqYvIHDMI8AOKNUc6n/xvjSVphCiAAAABh3T7afonjKwJZUG9MnI+xVtU+yFrJh7XAlxFTKb3H9EAAAACuPO4b57xWDNRYxyS1uKaebpDoMSTET0Xs4IoyIKdQg6yhZqJ3hUUr8I/syf02pjG4L6UOGYxarxecVT6L++T7</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -1617,6 +1617,29 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
       DTS:ObjectName="Restricción"
       DTS:To="Package\Operation FTP_Mail" />
   </DTS:PrecedenceConstraints>
+  <DTS:EventHandlers>
+    <DTS:EventHandler
+      DTS:refId="Package.EventHandlers[OnError]"
+      DTS:CreationName="OnError"
+      DTS:DTSID="{BFD2EC8E-8023-42C5-9999-D1032A4F8D9D}"
+      DTS:EventID="0"
+      DTS:EventName="OnError"
+      DTS:LocaleID="-1">
+      <DTS:Variables>
+        <DTS:Variable
+          DTS:CreationName=""
+          DTS:Description="La propiedad de propagación del evento"
+          DTS:DTSID="{DD2E79E2-786E-49B5-B14C-07C9379569CD}"
+          DTS:IncludeInDebugDump="6789"
+          DTS:Namespace="System"
+          DTS:ObjectName="Propagate">
+          <DTS:VariableValue
+            DTS:DataType="11">-1</DTS:VariableValue>
+        </DTS:Variable>
+      </DTS:Variables>
+      <DTS:Executables />
+    </DTS:EventHandler>
+  </DTS:EventHandlers>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--Esta sección CDATA contiene la información de diseño del paquete. Esta sección incluye información como, por ejemplo, las coordenadas (x,y), el ancho y el alto.-->
 <!--Si edita manualmente esta sección y comete un error, puede eliminarlo. -->
@@ -1628,7 +1651,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="131,42"
           Id="Package\Execute SP"
@@ -1642,7 +1665,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
           TopLeft="373.25,74.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="0,41.5"
               Start="0,0"
               End="0,34">
