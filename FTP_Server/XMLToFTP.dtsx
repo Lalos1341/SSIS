@@ -11,8 +11,8 @@
   DTS:LocaleID="2058"
   DTS:ObjectName="XMLToFTP"
   DTS:PackageType="5"
-  DTS:VersionBuild="104"
-  DTS:VersionGUID="{09A28B08-5447-41D5-BBF5-56FDA4E1F789}">
+  DTS:VersionBuild="107"
+  DTS:VersionGUID="{F06D941C-51FA-4237-9121-E7266C98F349}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -27,7 +27,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAjj3SHzngfU+fxdQdKlcAagAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADlCqJQLabJR9ABL6RZ7V5fn+6liX96XdpiaTniZYu7nQAAAAAOgAAAAAIAACAAAADHeGmO6ocJVdbAepgTy4ylNgxVYkfwPseLv7T/ObOa4CAAAADwIfgYQxmzDOO6ciKBxSekkYCWmhdpZOPX2vrWsGy/bEAAAAD7nZ74StxEVsVDhsHibZiBht1o/UWi8Ffb0PG+ftwfHCLwYurZ1Luk7wxA22d5JKz6C5iyR/HjgWhEbPmnz9w9</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAjj3SHzngfU+fxdQdKlcAagAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADJGvUOmVWCshcFpZtVr9McbHKVrDqmXajhqoWRL2WPnAAAAAAOgAAAAAIAACAAAABzconXzYBCOq+C6+82sDwTBZy/m6bEd8Nk/MKjSpeG2yAAAADHCLk3IF02J55SJjGmAtV9oiG11LHZjQghBKdBFwbrjkAAAAAw/zFEuvz+q4/o6VBEMCQa5LjFQZP5OM7QzO/mKTN002Cqkl/CEuT3cRxEeGXhyFReA9ShK4rdjpBd5NMOI0ZF</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -180,14 +180,35 @@
                   Language="CSharp"
                   ReadOnlyVariables="System::ErrorDescription">
                   <ProjectItem
-                    Name="Properties\Settings.settings"
-                    Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
-<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
-</SettingsFile>]]></ProjectItem>
+                    Name="Properties\AssemblyInfo.cs"
+                    Encoding="UTF8"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("ST_c1776c7acfc449b1a3de04470e96e8fd")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("ST_c1776c7acfc449b1a3de04470e96e8fd")]
+[assembly: AssemblyCopyright("Copyright @  2019")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
                   <ProjectItem
                     Name="Properties\Resources.resx"
                     Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
@@ -568,35 +589,14 @@ namespace ST_c1776c7acfc449b1a3de04470e96e8fd.Properties {
     }
 }]]></ProjectItem>
                   <ProjectItem
-                    Name="Properties\AssemblyInfo.cs"
-                    Encoding="UTF8"><![CDATA[using System.Reflection;
-using System.Runtime.CompilerServices;
-
-//
-// General Information about an assembly is controlled through the following 
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
-//
-[assembly: AssemblyTitle("ST_c1776c7acfc449b1a3de04470e96e8fd")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ST_c1776c7acfc449b1a3de04470e96e8fd")]
-[assembly: AssemblyCopyright("Copyright @  2019")]
-[assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]
-//
-// Version information for an assembly consists of the following four values:
-//
-//      Major Version
-//      Minor Version 
-//      Build Number
-//      Revision
-//
-// You can specify all the values or you can default the Revision and Build Numbers 
-// by using the '*' as shown below:
-
-[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
+                    Name="Properties\Settings.settings"
+                    Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></ProjectItem>
                   <ProjectItem
                     Name="Properties\Resources.Designer.cs"
                     Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
@@ -1299,16 +1299,16 @@ namespace ST_22bfdd8bc04b48ed962f69dd9ac01275
             Encoding="UTF16LE"><![CDATA[<?xml version="1.0" encoding="UTF-16" standalone="yes"?>
 <c:Project xmlns:c="http://schemas.microsoft.com/codeprojectml/2010/08/main" xmlns:msb="http://schemas.microsoft.com/developer/msbuild/2003" runtimeVersion="4.0" schemaVersion="1.0">
 	<msb:PropertyGroup>
-		<msb:Language>msBuild</msb:Language>
 		<msb:CodeName>ST_22bfdd8bc04b48ed962f69dd9ac01275</msb:CodeName>
+		<msb:Language>msBuild</msb:Language>
 		<msb:DisplayName>ST_22bfdd8bc04b48ed962f69dd9ac01275</msb:DisplayName>
 		<msb:ProjectId>{26ED8AF3-3C0A-43FB-B768-57FDBBF0B2DA}</msb:ProjectId>
 	</msb:PropertyGroup>
 	<msb:ItemGroup>
 		<msb:Project Include="ST_22bfdd8bc04b48ed962f69dd9ac01275.csproj"/>
 		<msb:File Include="Properties\Resources.resx"/>
-		<msb:File Include="Properties\AssemblyInfo.cs"/>
 		<msb:File Include="Properties\Settings.settings"/>
+		<msb:File Include="Properties\AssemblyInfo.cs"/>
 		<msb:File Include="Properties\Resources.Designer.cs"/>
 		<msb:File Include="Properties\Settings.Designer.cs"/>
 		<msb:File Include="ScriptMain.cs"/>
@@ -1424,7 +1424,7 @@ namespace ST_22bfdd8bc04b48ed962f69dd9ac01275.Properties {
           <BinaryItem
             Name="ST_22bfdd8bc04b48ed962f69dd9ac01275.dll">TVqQAAMAAAAEAAAA//8AALgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAgAAAAA4fug4AtAnNIbgBTM0hVGhpcyBwcm9ncmFtIGNhbm5vdCBiZSBydW4gaW4gRE9TIG1v
-ZGUuDQ0KJAAAAAAAAABQRQAATAEDAHBg3F0AAAAAAAAAAOAAIiALATAAAB4AAAAIAAAAAAAAuj0A
+ZGUuDQ0KJAAAAAAAAABQRQAATAEDACFQ3V0AAAAAAAAAAOAAIiALATAAAB4AAAAIAAAAAAAAuj0A
 AAAgAAAAQAAAAAAAEAAgAAAAAgAABAAAAAAAAAAGAAAAAAAAAACAAAAAAgAAAAAAAAMAYIUAABAA
 ABAAAAAAEAAAEAAAAAAAABAAAAAAAAAAAAAAAGg9AABPAAAAAEAAAHgEAAAAAAAAAAAAAAAAAAAA
 AAAAAGAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -1487,7 +1487,7 @@ AEkBeghNAakAagiFAdEB/wYQACwAAQHIAJkABQGUAckBSwIGAJkASwIGACwAygYGAHEA/wYGAMEA
 /wYGANkBfgGaAdkBYgmjAdkA/wapAfkA/wYGAPEBmwGxAQgAFADIAQgAGADNASkAewBwAi4ACwBI
 Ai4AEwBRAi4AGwBwAi4AIwB5Ai4AKwCiAi4AMwCiAi4AOwCiAi4AQwB5Ai4ASwCoAi4AUwCiAi4A
 WwC/AkMAYwDNAUkAewBwAmEAawDNAWMAcwDNAcMAawDNARsAzgAmAQMAAQAEAAMAAADUBjkCAAAJ
-Aj4CAAC4CEMCAgAGAAMAAgAHAAUAAQAIAAUAAgAJAAcAUQClALQAfQGLAQSAAAABAAAAZBxHeQAA
+Aj4CAAC4CEMCAgAGAAMAAgAHAAUAAQAIAAUAAgAJAAcAUQClALQAfQGLAQSAAAABAAAAZRxgSAAA
 AAAAAEAAAAAEAAAAAAAAAAAAAAC2AcwAAAAAAA0AAAAAAAAAAAAAAL8BwQQAAAAABAAAAAAAAAAA
 AAAAtgHZBQAAAAANAAAAAAAAAAAAAAC/AaUAAAAAAAQAAAAAAAAAAAAAALYB1QEAAAAABAAAAAAA
 AAAAAAAAtgEOCAAAAAAAAAAAAQAAAFAHAAAFAAIABgACADEAeAAzAI4ANwCOAAAAADw+OV9fMF8w
@@ -1545,8 +1545,8 @@ AHIAYQBjAGkAbwBuAG0AeABAAGkAbgB0AGUAcgB0AHIAYQBmAGYAaQBjAC4AYwBvAG0ALgBtAHgA
 ABtmAGEAYwB0AHUAcgBhAGMAaQBvAG4AbQB4AAARTgBTAGEAYwBGAEUAMwAzAAANZgB0AHAAOgAv
 AC8AAAM6AAADLwAACVMAVABPAFIAAAMsAAATdABlAHgAdAAvAGgAdABtAGwAAHFTAFQAXwAyADIA
 YgBmAGQAZAA4AGIAYwAwADQAYgA0ADgAZQBkADkANgAyAGYANgA5AGQAZAA5AGEAYwAwADEAMgA3
-ADUALgBQAHIAbwBwAGUAcgB0AGkAZQBzAC4AUgBlAHMAbwB1AHIAYwBlAHMAAAAAAHH/8FvJEwRH
-haBk5n6UKJcABCABAQgDIAABBSABARERBCABAQ4FIAEBEXUNBwMVEj0BDhURQQEODgUgABKAgQUg
+ADUALgBQAHIAbwBwAGUAcgB0AGkAZQBzAC4AUgBlAHMAbwB1AHIAYwBlAHMAAAAAABQQxc7rTG1A
+sZzbjCMbuVQABCABAQgDIAABBSABARERBCABAQ4FIAEBEXUNBwMVEj0BDhURQQEODgUgABKAgQUg
 ABKAhQYgARKAiRwDIAAcAyAADgUAAg4ODgYAAh0ODg4GFRJlAg4OBSACARwYGRACAhUSgJkBHgEV
 EoCZAR4AFRJlAh4AHgEECgIODhAQAQEVEj0BHgAVEoCZAR4AAwoBDgYAARGAoQ4LEAEBAhUSgJkB
 HgAFFRI9AQ4IIAAVEUEBEwAFFRFBAQ4EIAATAAQAAQEOAyAAAgUgAQETAAYHAhJFHQULAAMSRQ4R
@@ -1568,14 +1568,14 @@ X0NvckRsbE1haW4AbXNjb3JlZS5kbGwAAAAAAP8lACAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEA
 EAAAABgAAIAAAAAAAAAAAAAAAAAAAAEAAQAAADAAAIAAAAAAAAAAAAAAAAAAAAEAAAAAAEgAAABY
 QAAAGgQAAAAAAAAAAAAAGgQ0AAAAVgBTAF8AVgBFAFIAUwBJAE8ATgBfAEkATgBGAE8AAAAAAL0E
-7/4AAAEAAAABAEd5ZBwAAAEAR3lkHD8AAAAAAAAABAAAAAIAAAAAAAAAAAAAAAAAAABEAAAAAQBW
+7/4AAAEAAAABAGBIZRwAAAEAYEhlHD8AAAAAAAAABAAAAAIAAAAAAAAAAAAAAAAAAABEAAAAAQBW
 AGEAcgBGAGkAbABlAEkAbgBmAG8AAAAAACQABAAAAFQAcgBhAG4AcwBsAGEAdABpAG8AbgAAAAAA
 AACwBHoDAAABAFMAdAByAGkAbgBnAEYAaQBsAGUASQBuAGYAbwAAAFYDAAABADAAMAAwADAAMAA0
 AGIAMAAAABoAAQABAEMAbwBtAG0AZQBuAHQAcwAAAAAAAAAiAAEAAQBDAG8AbQBwAGEAbgB5AE4A
 YQBtAGUAAAAAAAAAAABwACQAAQBGAGkAbABlAEQAZQBzAGMAcgBpAHAAdABpAG8AbgAAAAAAUwBU
 AF8AMgAyAGIAZgBkAGQAOABiAGMAMAA0AGIANAA4AGUAZAA5ADYAMgBmADYAOQBkAGQAOQBhAGMA
 MAAxADIANwA1AAAAPgAPAAEARgBpAGwAZQBWAGUAcgBzAGkAbwBuAAAAAAAxAC4AMAAuADcAMgA2
-ADgALgAzADEAMAA0ADcAAAAAAHAAKAABAEkAbgB0AGUAcgBuAGEAbABOAGEAbQBlAAAAUwBUAF8A
+ADkALgAxADgANQAyADgAAAAAAHAAKAABAEkAbgB0AGUAcgBuAGEAbABOAGEAbQBlAAAAUwBUAF8A
 MgAyAGIAZgBkAGQAOABiAGMAMAA0AGIANAA4AGUAZAA5ADYAMgBmADYAOQBkAGQAOQBhAGMAMAAx
 ADIANwA1AC4AZABsAGwAAABIABIAAQBMAGUAZwBhAGwAQwBvAHAAeQByAGkAZwBoAHQAAABDAG8A
 cAB5AHIAaQBnAGgAdAAgAEAAIAAgADIAMAAxADkAAAAqAAEAAQBMAGUAZwBhAGwAVAByAGEAZABl
@@ -1584,8 +1584,8 @@ AABTAFQAXwAyADIAYgBmAGQAZAA4AGIAYwAwADQAYgA0ADgAZQBkADkANgAyAGYANgA5AGQAZAA5
 AGEAYwAwADEAMgA3ADUALgBkAGwAbAAAAGgAJAABAFAAcgBvAGQAdQBjAHQATgBhAG0AZQAAAAAA
 UwBUAF8AMgAyAGIAZgBkAGQAOABiAGMAMAA0AGIANAA4AGUAZAA5ADYAMgBmADYAOQBkAGQAOQBh
 AGMAMAAxADIANwA1AAAAQgAPAAEAUAByAG8AZAB1AGMAdABWAGUAcgBzAGkAbwBuAAAAMQAuADAA
-LgA3ADIANgA4AC4AMwAxADAANAA3AAAAAABGAA8AAQBBAHMAcwBlAG0AYgBsAHkAIABWAGUAcgBz
-AGkAbwBuAAAAMQAuADAALgA3ADIANgA4AC4AMwAxADAANAA3AAAAAAAAAAAAAAAAAAAAAAAAAAAA
+LgA3ADIANgA5AC4AMQA4ADUAMgA4AAAAAABGAA8AAQBBAHMAcwBlAG0AYgBsAHkAIABWAGUAcgBz
+AGkAbwBuAAAAMQAuADAALgA3ADIANgA5AC4AMQA4ADUAMgA4AAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
