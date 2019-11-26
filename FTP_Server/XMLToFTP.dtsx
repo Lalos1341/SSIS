@@ -11,8 +11,8 @@
   DTS:LocaleID="2058"
   DTS:ObjectName="XMLToFTP"
   DTS:PackageType="5"
-  DTS:VersionBuild="110"
-  DTS:VersionGUID="{5DFEFD9D-F989-45DC-86F3-B0260C9A4E83}">
+  DTS:VersionBuild="111"
+  DTS:VersionGUID="{976CF715-5F19-4491-8311-C8AF513C7309}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -27,7 +27,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAjj3SHzngfU+fxdQdKlcAagAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAmyHMUkFvjucDDH+wfCTa4Y+Uzkw0799JyafBq8W+r1wAAAAAOgAAAAAIAACAAAADsipRoigud1fevhLGCFLgBoZ3KePkwCLH/fyD2sC8i/yAAAACR+X/EOajIajjLMx/XsgjvrlZh55tlBVcDQQr0PbX+JkAAAAAhCoHBypsPDK+hXi0hiKHLbN21KOiG4VJhNnzyqoS7tegssQXRtn7gDerKieD6ptt5ZyutFjQU5uXrHBfZF51l</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAjj3SHzngfU+fxdQdKlcAagAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADlphocdvMVfNPps3Cj5/f8T5pVPcMoyal4AD5WonbecwAAAAAOgAAAAAIAACAAAACm6QX0jgS4X9Pc/f2pWT5KUKIxt/cSWyMuOyvPUS8IhSAAAADB58pSrJ0Pv1itzz3UnNrxqflOFMwiXzTVBeuGuITG5kAAAAB311Hf5rnDymyuRKaEZT/E++TmbNLOMSXv7AxAKmEkkqlhmZ3FoWzPZQb3HM03nJ5uIt8unZTk6dh6qTZsbfg/</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -180,14 +180,35 @@
                   Language="CSharp"
                   ReadOnlyVariables="System::ErrorDescription">
                   <ProjectItem
-                    Name="Properties\Settings.settings"
-                    Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
-<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
-</SettingsFile>]]></ProjectItem>
+                    Name="Properties\AssemblyInfo.cs"
+                    Encoding="UTF8"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("ST_c1776c7acfc449b1a3de04470e96e8fd")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("ST_c1776c7acfc449b1a3de04470e96e8fd")]
+[assembly: AssemblyCopyright("Copyright @  2019")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
                   <ProjectItem
                     Name="Properties\Resources.resx"
                     Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
@@ -568,35 +589,14 @@ namespace ST_c1776c7acfc449b1a3de04470e96e8fd.Properties {
     }
 }]]></ProjectItem>
                   <ProjectItem
-                    Name="Properties\AssemblyInfo.cs"
-                    Encoding="UTF8"><![CDATA[using System.Reflection;
-using System.Runtime.CompilerServices;
-
-//
-// General Information about an assembly is controlled through the following 
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
-//
-[assembly: AssemblyTitle("ST_c1776c7acfc449b1a3de04470e96e8fd")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ST_c1776c7acfc449b1a3de04470e96e8fd")]
-[assembly: AssemblyCopyright("Copyright @  2019")]
-[assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]
-//
-// Version information for an assembly consists of the following four values:
-//
-//      Major Version
-//      Minor Version 
-//      Build Number
-//      Revision
-//
-// You can specify all the values or you can default the Revision and Build Numbers 
-// by using the '*' as shown below:
-
-[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
+                    Name="Properties\Settings.settings"
+                    Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></ProjectItem>
                   <ProjectItem
                     Name="Properties\Resources.Designer.cs"
                     Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
@@ -806,15 +806,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
           Language="CSharp"
           ReadOnlyVariables="User::FTPPass,User::FTPPort,User::FTPServer,User::FTPUser,User::PathLocal">
           <ProjectItem
-            Name="Properties\Settings.settings"
-            Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
-<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
-</SettingsFile>]]></ProjectItem>
-          <ProjectItem
             Name="Properties\Resources.resx"
             Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
 <root>
@@ -933,6 +924,35 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
 </root>]]></ProjectItem>
+          <ProjectItem
+            Name="Properties\Settings.Designer.cs"
+            Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_22bfdd8bc04b48ed962f69dd9ac01275.Properties.Settings.get_Default():ST_22bfdd8bc04b48ed962f69dd9ac01275.Properties.Sett" +
+    "ings")]
+
+namespace ST_22bfdd8bc04b48ed962f69dd9ac01275.Properties {
+    
+    
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+        
+        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+        private static Settings defaultInstance = new Settings();
+        
+        public static Settings Default {
+            get {
+                return defaultInstance;
+            }
+        }
+    }
+}]]></ProjectItem>
           <ProjectItem
             Name="ST_22bfdd8bc04b48ed962f69dd9ac01275.csproj"
             Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
@@ -1121,7 +1141,8 @@ namespace ST_22bfdd8bc04b48ed962f69dd9ac01275
 		public void Main()
 		{
             //Rama de pruebas 
-            //rama de pruebas con cambios finales
+            //rama de pruebas con cambios finales 
+            //cambio esperando reparacion de error que se tiene en master
             //var x = Dts.Variables["User::FTPServer"].Value;
             var Files = Directory.GetFiles(Dts.Variables["User::PathLocal"].Value.ToString() + "\\", "*.xml").Select(f => System.IO.Path.GetFileName(f)).ToList();
 
@@ -1280,50 +1301,21 @@ namespace ST_22bfdd8bc04b48ed962f69dd9ac01275
             Encoding="UTF16LE"><![CDATA[<?xml version="1.0" encoding="UTF-16" standalone="yes"?>
 <c:Project xmlns:c="http://schemas.microsoft.com/codeprojectml/2010/08/main" xmlns:msb="http://schemas.microsoft.com/developer/msbuild/2003" runtimeVersion="4.0" schemaVersion="1.0">
 	<msb:PropertyGroup>
-		<msb:Language>msBuild</msb:Language>
 		<msb:CodeName>ST_22bfdd8bc04b48ed962f69dd9ac01275</msb:CodeName>
+		<msb:Language>msBuild</msb:Language>
 		<msb:DisplayName>ST_22bfdd8bc04b48ed962f69dd9ac01275</msb:DisplayName>
 		<msb:ProjectId>{26ED8AF3-3C0A-43FB-B768-57FDBBF0B2DA}</msb:ProjectId>
 	</msb:PropertyGroup>
 	<msb:ItemGroup>
 		<msb:Project Include="ST_22bfdd8bc04b48ed962f69dd9ac01275.csproj"/>
 		<msb:File Include="Properties\Resources.resx"/>
-		<msb:File Include="Properties\AssemblyInfo.cs"/>
 		<msb:File Include="Properties\Settings.settings"/>
+		<msb:File Include="Properties\AssemblyInfo.cs"/>
 		<msb:File Include="Properties\Resources.Designer.cs"/>
 		<msb:File Include="Properties\Settings.Designer.cs"/>
 		<msb:File Include="ScriptMain.cs"/>
 	</msb:ItemGroup>
 </c:Project>]]></ProjectItem>
-          <ProjectItem
-            Name="Properties\Settings.Designer.cs"
-            Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
-// <auto-generated>
-//     This code was generated by a tool.
-//
-//     Changes to this file may cause incorrect behavior and will be lost if
-//     the code is regenerated.
-// </auto-generated>
-//------------------------------------------------------------------------------
-
-[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_22bfdd8bc04b48ed962f69dd9ac01275.Properties.Settings.get_Default():ST_22bfdd8bc04b48ed962f69dd9ac01275.Properties.Sett" +
-    "ings")]
-
-namespace ST_22bfdd8bc04b48ed962f69dd9ac01275.Properties {
-    
-    
-    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
-        
-        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-        private static Settings defaultInstance = new Settings();
-        
-        public static Settings Default {
-            get {
-                return defaultInstance;
-            }
-        }
-    }
-}]]></ProjectItem>
           <ProjectItem
             Name="Properties\AssemblyInfo.cs"
             Encoding="UTF8"><![CDATA[using System.Reflection;
@@ -1354,6 +1346,15 @@ using System.Runtime.CompilerServices;
 // by using the '*' as shown below:
 
 [assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
+          <ProjectItem
+            Name="Properties\Settings.settings"
+            Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></ProjectItem>
           <ProjectItem
             Name="Properties\Resources.Designer.cs"
             Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
@@ -1425,7 +1426,7 @@ namespace ST_22bfdd8bc04b48ed962f69dd9ac01275.Properties {
           <BinaryItem
             Name="ST_22bfdd8bc04b48ed962f69dd9ac01275.dll">TVqQAAMAAAAEAAAA//8AALgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAgAAAAA4fug4AtAnNIbgBTM0hVGhpcyBwcm9ncmFtIGNhbm5vdCBiZSBydW4gaW4gRE9TIG1v
-ZGUuDQ0KJAAAAAAAAABQRQAATAEDAHZX3V0AAAAAAAAAAOAAIiALATAAAB4AAAAIAAAAAAAAuj0A
+ZGUuDQ0KJAAAAAAAAABQRQAATAEDAFFk3V0AAAAAAAAAAOAAIiALATAAAB4AAAAIAAAAAAAAuj0A
 AAAgAAAAQAAAAAAAEAAgAAAAAgAABAAAAAAAAAAGAAAAAAAAAACAAAAAAgAAAAAAAAMAYIUAABAA
 ABAAAAAAEAAAEAAAAAAAABAAAAAAAAAAAAAAAGg9AABPAAAAAEAAAHgEAAAAAAAAAAAAAAAAAAAA
 AAAAAGAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -1488,7 +1489,7 @@ AEkBeghNAakAagiFAdEB/wYQACwAAQHIAJkABQGUAckBSwIGAJkASwIGACwAygYGAHEA/wYGAMEA
 /wYGANkBfgGaAdkBYgmjAdkA/wapAfkA/wYGAPEBmwGxAQgAFADIAQgAGADNASkAewBwAi4ACwBI
 Ai4AEwBRAi4AGwBwAi4AIwB5Ai4AKwCiAi4AMwCiAi4AOwCiAi4AQwB5Ai4ASwCoAi4AUwCiAi4A
 WwC/AkMAYwDNAUkAewBwAmEAawDNAWMAcwDNAcMAawDNARsAzgAmAQMAAQAEAAMAAADUBjkCAAAJ
-Aj4CAAC4CEMCAgAGAAMAAgAHAAUAAQAIAAUAAgAJAAcAUQClALQAfQGLAQSAAAABAAAAZRwKTAAA
+Aj4CAAC4CEMCAgAGAAMAAgAHAAUAAQAIAAUAAgAJAAcAUQClALQAfQGLAQSAAAABAAAAZRx4UgAA
 AAAAAEAAAAAEAAAAAAAAAAAAAAC2AcwAAAAAAA0AAAAAAAAAAAAAAL8BwQQAAAAABAAAAAAAAAAA
 AAAAtgHZBQAAAAANAAAAAAAAAAAAAAC/AaUAAAAAAAQAAAAAAAAAAAAAALYB1QEAAAAABAAAAAAA
 AAAAAAAAtgEOCAAAAAAAAAAAAQAAAFAHAAAFAAIABgACADEAeAAzAI4ANwCOAAAAADw+OV9fMF8w
@@ -1546,8 +1547,8 @@ AHIAYQBjAGkAbwBuAG0AeABAAGkAbgB0AGUAcgB0AHIAYQBmAGYAaQBjAC4AYwBvAG0ALgBtAHgA
 ABtmAGEAYwB0AHUAcgBhAGMAaQBvAG4AbQB4AAARTgBTAGEAYwBGAEUAMwAzAAANZgB0AHAAOgAv
 AC8AAAM6AAADLwAACVMAVABPAFIAAAMsAAATdABlAHgAdAAvAGgAdABtAGwAAHFTAFQAXwAyADIA
 YgBmAGQAZAA4AGIAYwAwADQAYgA0ADgAZQBkADkANgAyAGYANgA5AGQAZAA5AGEAYwAwADEAMgA3
-ADUALgBQAHIAbwBwAGUAcgB0AGkAZQBzAC4AUgBlAHMAbwB1AHIAYwBlAHMAAAAAAMi4wXiaO9BH
-vGdQfb9F+tYABCABAQgDIAABBSABARERBCABAQ4FIAEBEXUNBwMVEj0BDhURQQEODgUgABKAgQUg
+ADUALgBQAHIAbwBwAGUAcgB0AGkAZQBzAC4AUgBlAHMAbwB1AHIAYwBlAHMAAAAAAA+CNGMW+BdF
+vLqvYX60KQYABCABAQgDIAABBSABARERBCABAQ4FIAEBEXUNBwMVEj0BDhURQQEODgUgABKAgQUg
 ABKAhQYgARKAiRwDIAAcAyAADgUAAg4ODgYAAh0ODg4GFRJlAg4OBSACARwYGRACAhUSgJkBHgEV
 EoCZAR4AFRJlAh4AHgEECgIODhAQAQEVEj0BHgAVEoCZAR4AAwoBDgYAARGAoQ4LEAEBAhUSgJkB
 HgAFFRI9AQ4IIAAVEUEBEwAFFRFBAQ4EIAATAAQAAQEOAyAAAgUgAQETAAYHAhJFHQULAAMSRQ4R
@@ -1569,14 +1570,14 @@ X0NvckRsbE1haW4AbXNjb3JlZS5kbGwAAAAAAP8lACAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEA
 EAAAABgAAIAAAAAAAAAAAAAAAAAAAAEAAQAAADAAAIAAAAAAAAAAAAAAAAAAAAEAAAAAAEgAAABY
 QAAAGgQAAAAAAAAAAAAAGgQ0AAAAVgBTAF8AVgBFAFIAUwBJAE8ATgBfAEkATgBGAE8AAAAAAL0E
-7/4AAAEAAAABAApMZRwAAAEACkxlHD8AAAAAAAAABAAAAAIAAAAAAAAAAAAAAAAAAABEAAAAAQBW
+7/4AAAEAAAABAHhSZRwAAAEAeFJlHD8AAAAAAAAABAAAAAIAAAAAAAAAAAAAAAAAAABEAAAAAQBW
 AGEAcgBGAGkAbABlAEkAbgBmAG8AAAAAACQABAAAAFQAcgBhAG4AcwBsAGEAdABpAG8AbgAAAAAA
 AACwBHoDAAABAFMAdAByAGkAbgBnAEYAaQBsAGUASQBuAGYAbwAAAFYDAAABADAAMAAwADAAMAA0
 AGIAMAAAABoAAQABAEMAbwBtAG0AZQBuAHQAcwAAAAAAAAAiAAEAAQBDAG8AbQBwAGEAbgB5AE4A
 YQBtAGUAAAAAAAAAAABwACQAAQBGAGkAbABlAEQAZQBzAGMAcgBpAHAAdABpAG8AbgAAAAAAUwBU
 AF8AMgAyAGIAZgBkAGQAOABiAGMAMAA0AGIANAA4AGUAZAA5ADYAMgBmADYAOQBkAGQAOQBhAGMA
 MAAxADIANwA1AAAAPgAPAAEARgBpAGwAZQBWAGUAcgBzAGkAbwBuAAAAAAAxAC4AMAAuADcAMgA2
-ADkALgAxADkANAA2ADYAAAAAAHAAKAABAEkAbgB0AGUAcgBuAGEAbABOAGEAbQBlAAAAUwBUAF8A
+ADkALgAyADEAMQAxADIAAAAAAHAAKAABAEkAbgB0AGUAcgBuAGEAbABOAGEAbQBlAAAAUwBUAF8A
 MgAyAGIAZgBkAGQAOABiAGMAMAA0AGIANAA4AGUAZAA5ADYAMgBmADYAOQBkAGQAOQBhAGMAMAAx
 ADIANwA1AC4AZABsAGwAAABIABIAAQBMAGUAZwBhAGwAQwBvAHAAeQByAGkAZwBoAHQAAABDAG8A
 cAB5AHIAaQBnAGgAdAAgAEAAIAAgADIAMAAxADkAAAAqAAEAAQBMAGUAZwBhAGwAVAByAGEAZABl
@@ -1585,8 +1586,8 @@ AABTAFQAXwAyADIAYgBmAGQAZAA4AGIAYwAwADQAYgA0ADgAZQBkADkANgAyAGYANgA5AGQAZAA5
 AGEAYwAwADEAMgA3ADUALgBkAGwAbAAAAGgAJAABAFAAcgBvAGQAdQBjAHQATgBhAG0AZQAAAAAA
 UwBUAF8AMgAyAGIAZgBkAGQAOABiAGMAMAA0AGIANAA4AGUAZAA5ADYAMgBmADYAOQBkAGQAOQBh
 AGMAMAAxADIANwA1AAAAQgAPAAEAUAByAG8AZAB1AGMAdABWAGUAcgBzAGkAbwBuAAAAMQAuADAA
-LgA3ADIANgA5AC4AMQA5ADQANgA2AAAAAABGAA8AAQBBAHMAcwBlAG0AYgBsAHkAIABWAGUAcgBz
-AGkAbwBuAAAAMQAuADAALgA3ADIANgA5AC4AMQA5ADQANgA2AAAAAAAAAAAAAAAAAAAAAAAAAAAA
+LgA3ADIANgA5AC4AMgAxADEAMQAyAAAAAABGAA8AAQBBAHMAcwBlAG0AYgBsAHkAIABWAGUAcgBz
+AGkAbwBuAAAAMQAuADAALgA3ADIANgA5AC4AMgAxADEAMQAyAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
