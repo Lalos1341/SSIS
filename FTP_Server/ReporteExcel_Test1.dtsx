@@ -1,4 +1,4 @@
-﻿<?xml version="1.0"?>
+<?xml version="1.0"?>
 <DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:refId="Package"
   DTS:CreationDate="11/11/2019 4:35:21 PM"
@@ -12,7 +12,7 @@
   DTS:ObjectName="ReporteExcel_Test1"
   DTS:PackageType="5"
   DTS:VersionBuild="5"
-  DTS:VersionGUID="{8294B43D-19DC-4FEC-84F1-1C9642FD9ACC}">
+  DTS:VersionGUID="{F620995A-8766-4890-AA74-D7EB1FC6AE67}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -23,7 +23,7 @@
       DTS:ObjectName="Administrador de conexiones con Excel">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\SSIS_Development\ReportFinal.xls;Extended Properties=&quot;Excel 8.0;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\SSIS_Development\ReportFinal.xls;Extended Properties=&quot;EXCEL 8.0;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -37,7 +37,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAjj3SHzngfU+fxdQdKlcAagAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAskUvYvyKpgfQ7iZuOMerj71ApgpE6GIAEcjtRjSfrsgAAAAAOgAAAAAIAACAAAACCkFvKjKGFD96R+jnpDGjAz23J3zNR0gJE8l+Tgy8znCAAAADn+6KRn7iXw6g9LnH7WHJajWtjPpD25x+BZUoD8r50/kAAAACFwtpIok6B2fTY9OcmxncbhQQCqeea4/yL47hgZIVDW3bPYpG6F3AaeW5iNADf7Go/fhEK6xtNLCriXpvvcUUs</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAjj3SHzngfU+fxdQdKlcAagAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABUBmWujQFz2KWm4F9dB7n7emaPhET31Gpp48IQSIrMYwAAAAAOgAAAAAIAACAAAAC+j3Y1jF8sLbgvcmnI4xvYykY5bctzYF5dYab7efhSeSAAAACoIwxZ973izNqSg79CD8/DzmvNi17gswIUxGiVIrYxgkAAAAA42lkoB542kEz4VzZhQZgg5vdXgb0CpHJDymRalCGSnBARf34QmMnzAqSe1CK/7qmfStExQT2cRbK+jNtu2gP+</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
